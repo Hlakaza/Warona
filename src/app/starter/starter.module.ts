@@ -5,6 +5,7 @@ import { DemoMaterialModule } from '../demo-material-module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { StarterComponent } from './starter.component';
 import { StarterRoutes } from './starter.routing';
+import { InvoiceComponent } from '../components/invoice/invoice.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { StarterRoutes } from './starter.routing';
     FlexLayoutModule,
     RouterModule.forChild(StarterRoutes)
   ],
-  declarations: [StarterComponent]
+  declarations: [StarterComponent, InvoiceComponent]
 })
 export class StarterModule {}
