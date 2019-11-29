@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material": {
+    "warona": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -21,8 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/styles/style.scss"
+              "src/styles/style.scss"
             ],
             "scripts": []
           },
@@ -49,18 +48,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "material:build"
+            "browserTarget": "warona:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "material:build:production"
+              "browserTarget": "warona:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material:build"
+            "browserTarget": "warona:build"
           }
         },
         "test": {
@@ -74,8 +73,7 @@
               "node_modules/jquery/dist/jquery.min.js"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/styles/style.scss"
+              "src/style.scss"
             ],
             "assets": [
               "src/assets",
@@ -97,7 +95,7 @@
         }
       }
     },
-    "material-e2e": {
+    "warona-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -106,7 +104,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "material:serve"
+            "devServerTarget": "warona:serve"
           }
         },
         "lint": {
@@ -123,14 +121,14 @@
       }
     }
   },
-  "defaultProject": "material",
+  "defaultProject": "warona",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "app",
-      "styleext": "css"
+      "prefix": "warona",
+      "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "prefix": "app"
+      "prefix": "warona"
     }
   }
 }
