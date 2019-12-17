@@ -1,10 +1,10 @@
-import * as express from 'express';
-import {ApiRoute} from './routing/api.routes';
-import {connectMongoDB} from './database/db.config';
-import * as schedule from 'node-schedule';
-import {DeamonController} from './controllers/deamon.controller';
-const app: express.Application = express();
-const port: number = process.env.PORT || 5000;
+  express  = require('express');
+  ApiRoute = require('./routing/api.routes');
+  connectMongoDB = require('./database/db.config');
+  schedule = require('node-schedule');
+  DeamonController = require('./controllers/deamon.controller');
+  app = express();
+  port = process.env.PORT || 5000;
 
 // Add headers
 app.use(function (req, res, next) {
